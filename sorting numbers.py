@@ -4,7 +4,7 @@ finished = 1
 number_list = []
 while finished == 1:
     total_numbers = input("How many numbers do you want to sort? \n")
-    numberrange_min = int(input("What is the lowest numbmer allowed? \n"))
+    numberrange_min = int(input("What is the lowest number allowed? \n"))
     numberrange_max = int(input("what is the highest number allowed? \n"))
     total_numbers = int(total_numbers)
     progress = 0

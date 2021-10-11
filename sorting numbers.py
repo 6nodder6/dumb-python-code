@@ -16,14 +16,16 @@ while finished == 1:
     time.sleep(.5)
     #considered using sorted() but it doesn't fit the constraints of the problem
     x = 0
-    highest_number = (number_list[1])
+    highest_number = (number_list[0])
     while int(x) < int(total_numbers):
         current_val = int(number_list[x])
         print("The current number is: ", current_val)
         x = x+1
-        if int(current_val) > int(highest_number):
+        if int(current_val) >= int(highest_number):
             highest_number = current_val
             print("The current highest number is ", highest_number)
+        else:
+            print("The current highest number (",highest_number,") is larger than this value (",current_val,")")
     finished = 0
 print("THE HIGHEST NUMBER HAS BEEN SELECTED!")
 time.sleep(1)        
